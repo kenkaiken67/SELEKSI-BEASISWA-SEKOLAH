@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Cek Kelayakan Beasiswa</h2>
+    <script>
+        let namaSiswa = prompt("Masukkan nama siswa:");
+        let nilaiRapor = Number(prompt("Masukkan nilai rata-rata rapor Anda:"));
+        let penghasilanOrtu = Number(prompt("Masukkan penghasilan orang tua Anda (Rp):"));
+        let status = "";
+
+        if (nilaiRapor >= 85 && penghasilanOrtu <= 4000000) {
+            status = "Selamat, Anda Layak Mendapat Beasiswa!";
+        } else {
+            status = "Maaf, Belum Memenuhi Syarat Beasiswa.";
+        }
+
+        document.write("Nama Siswa: <b>" + namaSiswa + "</b><br>");
+        document.write("Nilai Rata-rata Rapor: <b>" + nilaiRapor + "</b><br>");
+        document.write("Penghasilan Orang Tua: <b>Rp " + penghasilanOrtu + "</b><br>");
+        document.write("Status: <b>" + status + "</b><br>");
+        document.write("<br><b> TERIMA KASIH TELAH MENGISI FORM SELEKSI BEASISWA </b><br>");
+    </script>
+</body>
+</html>
